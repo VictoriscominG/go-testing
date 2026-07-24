@@ -17,7 +17,7 @@ func TestHashSHA256(t *testing.T) {
 	tests[2].want = HashSHA256("привет")
 
 	for _, tt := range tests {
-		tt := tt
+		//tt := tt
 		t.Run(tt.name, func(t *testing.T) {
 			t.Parallel()
 			got := HashSHA256(tt.in)
